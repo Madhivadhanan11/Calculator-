@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://e0.pxfuel.com/wallpapers/53/610/desktop-wallpaper-blue-two-color-background.jpg');
+}
+.calculator {
+    background: #280ab0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(56, 43, 43, 0.1);
+    text-align: center;
+    height: 58%;
+    width: 300px;
+}
+.display {
+    width: 85%;
+    height: 40px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #7dbeea;
+    border-radius: 10px;
+    background-color: rgb(119, 236, 236);
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button {
+    padding: 15px;
+    font-size: 1.5em;
+    border: darkblue;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #9de2ed;
+}
+button.operator {
+    background: #992ced;
+    color: white;
+}
+button.equal {
+    background: #e83c3c;
+    color: white;
+}
+button.clear {
+    background: #027449;
+    color: white;
+}
+button:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+}
